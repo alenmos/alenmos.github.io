@@ -307,6 +307,8 @@
           
         <p><img src="http://yun-1251192732.cosgz.myqcloud.com/Logo-Yuelxiang.png" alt=""></p>
 <p><img src="https://img.shields.io/wordpress/v/akismet.svg" alt=""> <img src="https://img.shields.io/wordpress/plugin/v/akismet.svg" alt=""></p>
+<p>湖南月尔向服装有限公司（YUELXIANG）是独立设计师服装品牌公司，其前身是创办于2011年长沙月尔服装设计工作室，工作室位于长沙市开福区营盘西路潮宗御苑，长沙直营店位于泊富I CITY美好生活中心一楼。</p>
+<p>湖南月尔向服装有限公司现有品牌为“YUEL DAY”&amp;“YUEL NIGHT”两个产品系列。“YUEL DAY”系列是为女性的日常穿着提供轻松时髦，简洁、中性而富有细节设计之美的日常的成衣系列。“YUEL NIGHT”则为品牌的高端定制线，为时髦女性的晚宴、红毯以及其他重要场合穿着提供的私人解决方案。</p>
 <h3 id="目录（PC和MOB）"><a href="#目录（PC和MOB）" class="headerlink" title="目录（PC和MOB）"></a>目录（PC和MOB）</h3><ul>
 <li>系列<ul>
 <li>18SS</li>
@@ -472,6 +474,22 @@
     </div>
     
 <script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 5;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
 
 
 
